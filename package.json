@@ -1,0 +1,23 @@
+{
+  "name": "sfc-gen",
+  "version": "1.0.9",
+  "description": "Vue 3 项目快速生成工具，支持一键生成组件、页面、Store 等",
+  "bin": {
+    "sfc-gen": "bin/add.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "sfc",
+    "generator",
+    "cli",
+    "component"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.18.0"
+  }
+}
