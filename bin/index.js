@@ -9,29 +9,8 @@ const { showUsage } = require('../lib/usage');
 const { handleInit } = require('../lib/init');
 const { handleVueComponent } = require('../lib/vue-generator');
 const { handleJsCommand } = require('../lib/js-generator');
+const { color }=require('../lib/utils')
 
-// ANSI 颜色
-const RESET = '\x1b[0m';
-const BRIGHT = '\x1b[1m';
-const DIM = '\x1b[2m';
-const RED = '\x1b[31m';
-const GREEN = '\x1b[32m';
-const YELLOW = '\x1b[33m';
-const BLUE = '\x1b[34m';
-const MAGENTA = '\x1b[35m';
-const CYAN = '\x1b[36m';
-
-const color = {
-  red: (text) => `${RED}${text}${RESET}`,
-  green: (text) => `${GREEN}${text}${RESET}`,
-  yellow: (text) => `${YELLOW}${text}${RESET}`,
-  blue: (text) => `${BLUE}${text}${RESET}`,
-  magenta: (text) => `${MAGENTA}${text}${RESET}`,
-  cyan: (text) => `${CYAN}${text}${RESET}`,
-  bright: (text) => `${BRIGHT}${text}${RESET}`,
-  dim: (text) => `${DIM}${text}${RESET}`,
-  error: (text) => `\x1b[41m\x1b[37m${text}${RESET}`,
-};
 
 // 检测 Vue 版本
 function detectVueVersion(projectRoot) {
