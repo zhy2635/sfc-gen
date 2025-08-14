@@ -88,7 +88,7 @@ function main() {
 
   // 分发命令
   if (command.startsWith('js:')) {
-    handleJsCommand(args, srcDir, color);
+    handleJsCommand(args, srcDir, color,vueVersion);
   } else {
     // ✅ 正确调用：传入 vueVersion
     handleVueComponent(args, srcDir, color, vueVersion);
