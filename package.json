@@ -1,6 +1,6 @@
 {
   "name": "sfc-gen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue 3 SFC 快速生成工具",
   "bin": {
     "sfc-gen": "bin/index.js"
@@ -8,7 +8,12 @@
   "scripts": {
     "test": "node bin/index.js"
   },
-  "keywords": ["vue", "cli", "scaffold", "generator"],
+  "keywords": [
+    "vue",
+    "cli",
+    "scaffold",
+    "generator"
+  ],
   "author": "Your Name",
   "license": "MIT"
 }
