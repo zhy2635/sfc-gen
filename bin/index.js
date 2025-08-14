@@ -3,6 +3,7 @@
 const path = require('path');
 const fs = require('fs');
 
+
 // 动态加载 lib 模块（CommonJS）
 const { validateProject } = require('../lib/validator');
 const { showUsage } = require('../lib/usage');
@@ -10,9 +11,9 @@ const { handleInit } = require('../lib/init');
 const { handleVueComponent } = require('../lib/vue-generator');
 const { handleJsCommand } = require('../lib/js-generator');
 
+
 // 路径常量
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
-const projectRoot = process.cwd();
+const projectRoot = process.cwd();        // 当前执行命令的目录
 const srcDir = path.join(projectRoot, 'src');
 
 // ANSI 颜色（保持原样）
@@ -44,6 +45,7 @@ function main() {
 
   if (args.length === 0) {
     showUsage();
+    return;
   }
 
   const command = args[0];
