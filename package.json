@@ -1,7 +1,8 @@
 {
   "name": "sfc-gen",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Vue 3 SFC 快速生成工具",
+  "type": "commonjs",
   "bin": {
     "sfc-gen": "bin/index.js"
   },
