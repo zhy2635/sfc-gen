@@ -60,7 +60,6 @@ function main() {
   let vueVersion = 'vue3';
   try {
     vueVersion = detectVueVersion(projectRoot);
-    console.log(color.dim(`🔍 Detected: ${vueVersion.toUpperCase()}`));
   } catch (err) {
     console.warn(color.yellow(`⚠️ 无法检测 Vue 版本，默认使用 Vue 3 模板`));
   }

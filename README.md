@@ -30,9 +30,10 @@ npm install sfc-gen --save-dev
 ### 2. 初始化配置（可选）
 
 ```bash
-sfc-gen init
+npx sfc-gen init
 # 自动添加 package.json 脚本：
 # { "scripts": { "add": "sfc-gen" } }
+# 也可自行添加
 ```
 
 ### 3. 生成你的第一个文件
