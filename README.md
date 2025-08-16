@@ -65,8 +65,8 @@ npm run add
 | 命令                            | 生成位置                     | 包含文件                     |
 | ------------------------------- | ---------------------------- | ---------------------------- |
 | `npm run add Card`              | `src/views/Card/`            | index.vue, test.vue, page.js |
-| `npm run add c:Button`          | `src/components/Button/`     | 同上                         |
-| `npm run add v:admin/Dashboard` | `src/views/admin/Dashboard/` | 同上                         |
+| `npm run add c:Button`          | `src/components/Button/`     | index.vue, test.vue          |
+| `npm run add v:admin/Dashboard` | `src/views/admin/Dashboard/` | index.vue, test.vue, page.js |
 
 
 
@@ -74,9 +74,9 @@ npm run add
 
 ```
 src/views/Card/
-├── index.vue     # 主组件（含 Options API 模板）
-├── test.vue      # 预览页（带实时渲染）
-└── page.js       # 路由配置（懒加载）
+├── index.vue     # 主组件
+├── test.vue      # 预览页
+└── page.js       # 路由配置
 ```
 
 ### ⚙️ JS 模块生成
@@ -154,20 +154,16 @@ npm run add Card --setup
 
 1. **提交 Issue**：bug 反馈 / 功能建议
 
-2. Pull Request
-
-   ：
+2. Pull Request：
 
    - 模板改进
    - 新功能实现
    - 文档优化
-
-3. 联系作者
-
-   ：
+   
+3. 联系作者：
 
    - Email: [guochang2635@icloud.com](mailto:your.email@example.com)
-   - GitHub: [@zhy2635](https://github.com/your-username/sfc-gen)
+- GitHub: [@zhy2635](https://github.com/zhy2635/sfc-gen)
 
 ------
 
